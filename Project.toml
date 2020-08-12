@@ -2,3 +2,13 @@ name = "Factorions"
 uuid = "604a65ec-8bbe-47d7-8ae2-c50767d4e3fa"
 authors = ["Ed Scheinerman <ers@jhu.edu>"]
 version = "0.0.1"
+
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
