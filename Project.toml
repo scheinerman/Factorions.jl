@@ -1,0 +1,4 @@
+name = "Factorions"
+uuid = "604a65ec-8bbe-47d7-8ae2-c50767d4e3fa"
+authors = ["Ed Scheinerman <ers@jhu.edu>"]
+version = "0.0.1"
