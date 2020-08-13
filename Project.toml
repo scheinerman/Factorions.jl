@@ -3,9 +3,14 @@ uuid = "604a65ec-8bbe-47d7-8ae2-c50767d4e3fa"
 authors = ["Ed Scheinerman <ers@jhu.edu>"]
 version = "0.0.1"
 
+[deps]
+Memoize = "c03570c3-d221-55d1-a50c-7939bbd78826"
+ProgressMeter= "92933f4c-e287-5a05-a399-4b506db050ca"
 
 [compat]
 julia = "1"
+Memoize = "0"
+ProgressMeter = "1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
