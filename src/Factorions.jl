@@ -66,7 +66,6 @@ function find_all_factorions(b::Int=10)
 end
 
 
-
 """
 `string_base(n,b)` renders the nonnegative integer `n` in  
 base `b` (we require `1 < b < 37`).
