@@ -48,7 +48,7 @@ end
 
 function find_all_factorions(b::Int=10)
     stop = b^fact_upper_bound(b)
-    println("Trying $stop possibilities")
+    println("Trying $stop possibilities (up to $(fact_upper_bound(b)) digits)")
     list = Int[]
     PM = Progress(stop)
     for n=1:stop
@@ -57,11 +57,11 @@ function find_all_factorions(b::Int=10)
         end
         next!(PM)
     end
-    # return list
     for x in list
         println(string_base(x,b)*"_$b = $x")
     end 
 
+    return list
 
 end
 
