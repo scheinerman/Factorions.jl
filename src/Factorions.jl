@@ -1,7 +1,7 @@
 module Factorions
 using Memoize, ProgressMeter, Distributed
 
-export is_factorion, fact_upper_bound, find_all_factorions, string_base
+export is_factorion, fact_upper_bound, find_factorions, string_base
 export find_in_range, find_in_parallel
 
 
@@ -48,7 +48,7 @@ end
 
 
 
-function find_all_factorions(b::Int = 10)
+function find_factorions(b::Int = 10)
     stop = b^fact_upper_bound(b)
     println("Trying $stop possibilities (up to $(fact_upper_bound(b)) digits)")
     list = Int[]
