@@ -6,6 +6,7 @@ version = "0.0.1"
 [deps]
 Memoize = "c03570c3-d221-55d1-a50c-7939bbd78826"
 ProgressMeter= "92933f4c-e287-5a05-a399-4b506db050ca"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
 [compat]
 julia = "1"

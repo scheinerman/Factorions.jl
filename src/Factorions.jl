@@ -1,7 +1,8 @@
 module Factorions
-using Memoize, ProgressMeter
+using Memoize, ProgressMeter, Distributed
 
 export is_factorion, fact_upper_bound, find_all_factorions, string_base
+export find_in_range, find_in_parallel
 
 @memoize function fast_fact(n::Int)
     return factorial(n)
@@ -65,6 +66,31 @@ function find_all_factorions(b::Int=10)
 
 end
 
+function find_in_range(rng,b::Int=10)
+    list = Int[]
+    for x in rng 
+        if is_factorion(x,b)
+            push!(list,x)
+        end
+    end
+    return Set(list) 
+end 
+
+function find_in_parallel(b::Int=10)
+    stop = b^fact_upper_bound(b)
+    println("Trying $stop possibilities (up to $(fact_upper_bound(b)) digits)")
+    np = Threads.nthreads()
+    addprocs(np)
+    results = Vector{Any}(undef,np)
+
+    for j=1:np
+        rng = j:np:stop 
+        println("Spawning process #$j")
+        results[j] = @spawnat j+1 find_in_range(rng,b)
+    end 
+    sets = fetch.(results)
+    return union(sets...)
+end
 
 """
 `string_base(n,b)` renders the nonnegative integer `n` in  
