@@ -10,7 +10,7 @@ Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
 [compat]
 julia = "1"
-Memoize = "0"
+Memoize = "0.3, 0.4"
 ProgressMeter = "1"
 
 [extras]
