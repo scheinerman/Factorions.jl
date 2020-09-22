@@ -1,4 +1,4 @@
-# Factorions.jl
+# Factorions
 Code to hunt for factorions in any base
 
 
