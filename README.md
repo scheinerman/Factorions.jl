@@ -1,11 +1,12 @@
 # Factorions
-Code to hunt for factorions in any base.
 
 
 [![Build Status](https://travis-ci.com/scheinerman/Factorions.jl.svg?branch=master)](https://travis-ci.com/scheinerman/Factorions.jl)
 
 
+Code to hunt for factorions in any base.
 
+## Example
 Hunt for all factorions in base-6:
 
 ```julia
