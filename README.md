@@ -1,12 +1,9 @@
 # Factorions
-Code to hunt for factorions in any base
+Code to hunt for factorions in any base.
 
 
-[![Build Status](https://travis-ci.org/scheinerman/Factorions.jl.svg?branch=master)](https://travis-ci.org/scheinerman/Factorions.jl)
+[![Build Status](https://travis-ci.com/scheinerman/Factorions.jl.svg?branch=master)](https://travis-ci.com/scheinerman/Factorions.jl)
 
-[![Coverage Status](https://coveralls.io/repos/scheinerman/Factorions.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/scheinerman/Factorions.jl?branch=master)
-
-[![codecov.io](http://codecov.io/github/scheinerman/Factorions.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/Factorions.jl?branch=master)
 
 
 Hunt for all factorions in base-6:
