@@ -1,9 +1,5 @@
 # Factorions
 
-
-[![Build Status](https://travis-ci.com/scheinerman/Factorions.jl.svg?branch=master)](https://travis-ci.com/scheinerman/Factorions.jl)
-
-
 Code to hunt for factorions in any base.
 
 ## Example
