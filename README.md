@@ -2,8 +2,8 @@
 
 Code to hunt for factorions in any base.
 
-## Example
-Hunt for all factorions in base six:
+## Examples
+Hunt for all factorions in bases 6, 9, and 10:
 
 ```
 julia> using Factorions
