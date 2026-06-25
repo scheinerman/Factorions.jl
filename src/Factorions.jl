@@ -2,7 +2,7 @@ module Factorions
 using Memoize, ProgressMeter, Distributed
 
 export is_factorion, fact_upper_bound, find_factorions, string_base
-export find_in_range, find_in_parallel
+export find_in_range, find_in_parallel, sum_fact_digs
 
 
 @memoize function fast_fact(n::Int)
